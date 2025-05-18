@@ -2,7 +2,6 @@
 Deploy a house price prediction service (3-hour time limit)
 
 
-
 ## Setup
 
 Create and activate virtual enviroment:
@@ -17,3 +16,14 @@ All required Python packages are listed in `requirements.txt`. To install the de
 ```bash
 pip install -r requirements.txt
 ```
+
+
+## Train the model
+
+Run the following: 
+
+```bash
+python ml/model_training.py
+```
+
+This will train a linear regression model on the provided dataset and save it to memory as `ml/model.skops`.
