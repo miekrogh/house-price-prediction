@@ -9,6 +9,7 @@ from skops.io import dump
 def main():
   # Load and preprocess data.
   df = pd.read_csv('data/real_estate.csv')
+  df.columns = [c.strip().replace(" ", "_") for c in df.columns] # replace spaces, necessary for input validation
   df = df.drop(columns=['No']) # identifiers carry no useful information
 
   features = df.columns[:-1]
