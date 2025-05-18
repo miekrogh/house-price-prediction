@@ -6,7 +6,8 @@ Minimal feature engineering has been performed: I dropped the 'No' column and no
 The model was trained using scikit-learn and serialized with Skops for safe loading. 
 I implemented a simple API using Flask to expose the model for predictions, and I used Marshmallow to validate incoming JSON payloads.
 I implemented basic logging to track inputs and system activity.
-Finally, I used pytest for testing the API and model loading.
+I used pytest for testing the API and model loading.
+Finally, I used Docker for containerizing the application.
 
 
 ## Setup
