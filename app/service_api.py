@@ -94,10 +94,12 @@ def create_app():
   return app
 
 
-def main():
+def main(host='127.0.0.1'):
   app = create_app()
-  app.run(host='127.0.0.1', port=5000, debug=True)
+  app.run(host=host, port=5000, debug=True)
 
 
 if __name__ == "__main__":
-  main()
+  # Use localhost when running it locally, 0.0.0.0 for Docker
+  host = sys.argv[1] if len(sys.argv) > 1 else '127.0.0.1'
+  main(host)
