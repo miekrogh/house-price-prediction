@@ -72,3 +72,27 @@ pytest
 ```
 
 This runs the tests in `tests/test_app.py`. The requests and responses are logged to the `app.log` file in the root folder.
+
+
+## Run API through Docker container
+
+Run the following to build a Docker image:
+
+```bash
+docker build -t house-price-api . # or whichever image name you prefer
+```
+
+Run the following to start the Flask app in the container:
+
+```bash
+docker run -p 5000:5000 house-price-api
+```
+
+Once the Docker container is running, you can interact with the API using the same `curl` commands described above.
+
+To stop the container and remove unused resources, run the following:
+
+```bash
+docker stop house-price-api
+docker container prune
+```

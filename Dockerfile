@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 5000
 
 # Define commands to run application
-CMD ["python3", "app/service_api.py"]
+CMD ["python", "app/service_api.py", "0.0.0.0"]
