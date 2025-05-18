@@ -1,4 +1,8 @@
 matplotlib==3.10.3
 numpy==2.2.6
 pandas==2.2.3
+pytest==8.3.5
+requests==2.32.3
+scikit-learn==1.6.1
 seaborn==0.13.2
+skops==0.11.0
