@@ -7,7 +7,7 @@ The model was trained using scikit-learn and serialized with Skops for safe load
 I implemented a simple API using Flask to expose the model for predictions, and I used Marshmallow to validate incoming JSON payloads.
 I implemented basic logging to track inputs and system activity.
 I used pytest for testing the API and model loading.
-Finally, I used Docker for containerizing the application.
+Finally, I used Docker for containerizing the application and GitHub Actions to automate testing.
 
 
 ## Setup
